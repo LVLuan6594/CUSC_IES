@@ -18,6 +18,19 @@ html {
   scroll-padding-top: 76px;
   scroll-behavior: smooth;
 }
+.img-container.equal-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px; /* chỉnh chiều cao theo ý */
+    overflow: hidden;
+}
+
+.img-container.equal-img img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
 
 body {
   font-family: "Open Sans", sans-serif;

@@ -4,75 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUSC-IES: Phần mềm Quản Lý Sáng Kiến</title>
+    <title>CUSC-IES</title>
     <meta name="description"
         content="CUSC-IES là phần mềm quản lý sáng kiến ứng dụng AI, giúp số hóa toàn diện quy trình đăng ký, xét duyệt, chấm điểm và công nhận sáng kiến. Từng bước tiến đến công tác chuyển đổi số toàn diện trong quy trình xử lý hồ sơ sáng kiến và các thủ tục có liên quan.">
     <link rel="icon" type="image/x-icon" href="assets/img/CUSC_Logo.png">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel='stylesheet'
         href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-
-    <!-- Uicons Solid -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@700&family=Open+Sans&family=Lato&family=Poppins:wght@600&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="assets/style.css">
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "CUSC-IES",
-            "applicationCategory": "BusinessApplication",
-            "operatingSystem": "Web-based, iOS, Android",
-            "description": "CUSC-IES là giải pháp phần mềm quản lý sáng kiến toàn diện, giúp tối ưu hóa quy trình từ đăng ký, xét duyệt đến công nhận sáng kiến, ứng dụng công nghệ AI để kiểm tra trùng lắp và đạt giải thưởng Sao Khuê 2023.",
-            "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "1"
-            },
-            "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "VND"
-            },
-            "award": "Giải thưởng Sao Khuê 2023"
-        }
-    </script>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Thời gian phản hồi của CUSC-IES là bao lâu?",
-                "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Chúng tôi phản hồi ngay lập tức qua Call/Email và hỗ trợ 24/7 cho các sự cố khẩn cấp."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Chính sách bảo hành của phần mềm như thế nào?",
-                "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Phần mềm được bảo hành miễn phí 12 tháng kể từ ngày nghiệm thu, bao gồm cập nhật, sửa lỗi và tư vấn sử dụng."
-                }
-            }
-            ]
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
 <body>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -96,7 +43,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section class="hero-section">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -106,16 +52,12 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/img/banner-cusc-ies.webp" class="d-block w-100"
+                    <img src="assets/img/banner-cusc-ies.jpg" class="d-block w-100"
                         alt="Giao diện phần mềm quản lý sáng kiến CUSC-IES">
                     <div class="carousel-caption">
                         <h1 data-aos="fade-up">Phần mềm Quản Lý Sáng Kiến <span>CUSC-IES</h1>
                         <p data-aos="fade-up" data-aos-delay="100">Giải pháp tối ưu hóa Quy trình từ việc nộp hồ sơ sáng kiến, xét duyệt sáng kiến, chấm điểm và
                             công nhận hiệu quả áp dụng và phạm vi ảnh hưởng của sáng kiến</p>
-                        <a href="#contact" class="btn btn-primary fs-5" data-bs-toggle="modal"
-                            data-bs-target="#contactModal" data-aos="fade-up" data-aos-delay="200">
-                            Liên hệ tư vấn
-                        </a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -125,7 +67,6 @@
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
@@ -143,9 +84,9 @@
                         Giúp đơn vị nâng cao hiệu quả, tiết kiệm thời gian, chi phí và
                         đảm bảo minh bạch tuyệt đối.
                     </p>
-                      <p>
-                        <i class="fi fi-sr-check-circle"></i>
-                        Ứng dụng tính năng AI - Giúp kiểm tra tính minh bạch, trùng lắp sáng kiến.
+                    <p>
+                        <i class="fi fi-sr-check-circle"></i> 
+                        <span style="font-weight: bold; color:darkorange;">Ứng dụng tính năng AI</span> - Giúp kiểm tra tính mới, mức độ trùng lắp sáng kiến nhanh chóng.
                     </p>
                 </div>
 
@@ -161,13 +102,12 @@
             </div>
         </div>
     </section>
-
     <!-- Features Section -->
     <section id="features" class="py-5 bg-white">
         <div class="container">
-            <h2 class="text-center mb-4" data-aos="fade-up">Khám phá những tính năng nổi bật của phần mềm
+            <h2 class="text-center mb-4" data-aos="fade-up">MỘT SỐ TÍNH NĂNG NỔI BẬT CỦA PHẦN MỀM CUSC-IES
             </h2>
-            <div class="row">
+            <div class="row">   
                 <div class="col-md-4 mb-4" data-aos="fade-up">
                     <div class="feature-card p-3 text-center">
                         <i class="fi fi-sr-script fa-2x mb-3" style="color: var(--light-orange);"></i>
@@ -271,7 +211,6 @@
             </div>
         </div>
     </section>
-
     <!-- Benefits Section -->
     <section id="benefits" class="py-5" style="background-color: var(--light-orange);">
         <div class="container">
@@ -368,11 +307,10 @@
             </div>
         </div>
     </section>
-
     <!-- Process Section -->
     <section id="process" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4" data-aos="fade-up">Quy trình Quản lý Sáng kiến chỉ với 4 bước đơn giản</h2>
+            <h2 class="text-center mb-4" data-aos="fade-up">Quy trình Quản lý Sáng kiến <br>Được cấu hình linh động tùy theo yêu cầu của Quý khách hàng</h2>
             <div class="timeline">
                 <div class="step" data-aos="fade-up">
                     <div class="content">
@@ -399,7 +337,7 @@
                             <i class="fi fi-sr-people-poll fa-2x me-2" style="color: var(--light-orange);"></i>
                             Chấm điểm và Xét duyệt
                         </h5>
-                        <p>Thanh viên Hội đồng chấm điểm, công bố nhận sáng kiến; Xem xét hiệu quả áp dụng và phạm vi ảnh hưởng  trên phần mềm.</p>
+                        <p>Thành viên Hội đồng chấm điểm, công bố sáng kiến được công nhận; Xem xét hiệu quả áp dụng và phạm vi ảnh hưởng  trên phần mềm.</p>
                     </div>
                 </div>
                 <div class="step" data-aos="fade-up" data-aos-delay="300">
@@ -414,7 +352,6 @@
             </div>
         </div>
     </section>
-
     <!-- Trust Section -->
     <section id="trust" class="py-5 bg-light">
         <div class="container">
@@ -423,37 +360,37 @@
                 <div class="col-12 col-lg-4 mb-4">
                     <div class="trust-card" data-aos="zoom-in" data-aos-delay="100">
                         <div class="card-inner">
-                            <h3 class="gradient-text">Tại sao nên tin tưởng CUSC?</h3>
-                            <div class="trust-info">
+                            <h3 class="gradient-text">Tại sao nên tin tưởng và đồng hành cùng CUSC?</h3>
+                            <div class="trust-info" style="font-size: 18px;">
                                 <div class="mb-4">
-                                    <p class="highlight-text fw-bold">Với kinh nghiệm hơn 24 năm</p>
-                                    <p>Hoạt động và triển khai nhiều giải pháp chính phủ điện tử như: Quản lý sáng kiến, ISO điện tử theo TCVN ISO 9001:2015, ...</p>
+                                    <p>
+                                    <span style="font-weight: bold;">
+                                        Với kinh nghiệm hơn 24 năm
+                                    </span> hoạt động và triển khai nhiều giải pháp phần mềm phục vụ lĩnh vực chính phủ điện tử như: 
+                                    Quản lý sáng kiến, ISO điện tử theo TCVN ISO 9001:2015, ...
+                                    </p>
                                 </div>
-                                <div>
-                                    <p class="highlight-text fw-bold">ISO</p>
-                                    <p>Toàn bộ quy trình hoạt động của CUSC đạt chuẩn TCVN ISO 9001:2015 về Hệ thống Quản lý chất lượng và ISO 27001:2022 về Hệ thống bảo mật ATTT</p>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- Card 2: Giải thưởng SAO KHUÊ -->
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="trust-card" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="card-inner">
-                            <h5>CUSC-IES: Nhận được giải thưởng Sao Khuê 2023</h5>
+                        <div class="card-inner" >
+                            <h3 class="gradient-text">CUSC-IES <br>Đạt giải thưởng Sao Khuê 2023</h3>
                             <div class="img-container">
                                 <img src="assets/img/giai-thuong-sao-khue-2023.webp" class="img-fluid rounded"
                                     alt="CUSC-IES đạt giải thưởng Sao Khuê 2023">
                             </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
                 <!-- Card 3: Chứng nhận -->
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
                     <div class="trust-card" data-aos="zoom-in" data-aos-delay="300">
                         <div class="card-inner">
-                            <h5>Chứng nhận</h5>
+                            <h3 class="gradient-text">Chứng nhận <br>Đăng ký bản quyền tác giả</h3>
                             <div class="img-container">
                                 <img src="assets/img/giay-chung-nhan-dang-ky-quyen-tac-gia.webp"
                                     class="img-fluid rounded" alt="Giấy chứng nhận đăng ký quyền tác giả">
@@ -502,7 +439,6 @@
             </div>
         </div>
     </section>
-
     <!-- Support Section -->
     <section id="support" class="py-5 support-section">
         <div class="container">
@@ -510,22 +446,19 @@
                 <div class="support-title" data-aos="fade-right">
                     <h2>
                         <i class="fas fa-headset me-2"></i>
-                        Sẵn sàng hỗ trợ
-                        <br class="d-none d-lg-block">kỹ thuật 24/7
+                        Sẵn sàng hỗ trợ khi nhận được yêu cầu 
                     </h2>
-                    <p class="mt-3">Đội ngũ kỹ thuật chuyên nghiệp của CUSC luôn luôn sẵn sàng hỗ trợ và đồng hành cùng khách hàng trong
-                        suốt quá trình triển khai và sử dụng phần mềm</p>
+                    <p class="mt-3">Đội ngũ hỗ trợ chuyên nghiệp của CUSC luôn luôn sẵn sàng hỗ trợ và đồng hành cùng Quý khách hàng</p>
                 </div>
                 <div class="support-faq" data-aos="fade-left">
                     <div class="accordion" id="faqAccordion">
                         <div class="accordion-item" data-aos="fade-up">
                             <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#faq1">Thời gian phản hồi?</button>
+                                    data-bs-target="#faq1">Thời gian phản hồi, hỗ trợ?</button>
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse show">
-                                <div class="accordion-body">Ngay lập tức khi nhận được phản hồi. Hỗ trợ 24/7 cho các sự cố khẩn
-                                    cấp.</div>
+                                <div class="accordion-body">Cam kết phản hồi đến Quý khách hàng trong vòng 48h các ngày làm việc trong tuần kể từ khi nhận được yêu cầu.</div>
                             </div>
                         </div>
                         <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
@@ -534,8 +467,7 @@
                                     data-bs-target="#faq2">Chính sách bảo hành?</button>
                             </h2>
                             <div id="faq2" class="accordion-collapse collapse">
-                                <div class="accordion-body">Bảo hành 12 tháng miễn phí kể từ ngày nghiệm thu. Bao gồm cập nhật, sửa
-                                    lỗi và hỗ trợ trong quá trình sử dụng.</div>
+                                <div class="accordion-body">Bảo hành 12 tháng kể từ ngày Nghiệm thu sản phẩm.</div>
                             </div>
                         </div>
                         <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
@@ -544,7 +476,7 @@
                                     data-bs-target="#faq3">Chi phí bảo trì?</button>
                             </h2>
                             <div id="faq3" class="accordion-collapse collapse">
-                                <div class="accordion-body">Ưu đãi đặc biệt cho hợp đồng dài hạn</div>
+                                <div class="accordion-body">Ưu đãi đặc biệt cho hợp đồng dài hạn. Sẽ có sự thỏa thuận giữa các bên liên quan.</div>
                             </div>
                         </div>
                         <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
@@ -561,7 +493,6 @@
             </div>
         </div>
     </section>
-
     <!-- Contact Modal -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -653,86 +584,84 @@
             </div>
         </div>
     </div>
-
     <!-- Footer -->
-    <footer class="footer pt-5 pb-3">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-xl-5 col-md-12"  style="text-align: left;">
-                    <div class="footer-info">
-                        <!-- logo CUSC -> toHeader -->
-                         <a href="index.html">
-                            <img src="assets/img/logo_CUSC.jpg" alt="CUSC Logo" 
-                            class="footer-logo mb-4"
-                            style="height: 105px; width: 200px;">
-                         </a>
-                        <!-- CUSC infor -->
-                        <p class="mb-3" style="color: goldenrod; text-align: left;">
-                            <span class="fw-bold" style="font-size: 16px;">TRUNG TÂM CÔNG NGHỆ PHẦN MỀM - ĐẠI HỌC CẦN THƠ</span>
-                        </p>
-                         <!-- <p class="mb-3" style="color: goldenrod; text-align: left;">
-                            <span class="fs-5 fw-bold">ĐẠI HỌC CẦN THƠ</span>
-                        </p> -->
-                        <p class="footer-contact-item">
-                            <i class="fas fa-map-marker-alt me-2"></i>
-                            <span>01 Lý Tự Trọng, Phường Ninh Kiều, Thành phố Cần Thơ</span>
-                        </p>
-                        <p class="footer-contact-item">
-                            <a href="tel:02923731072">
-                                <i class="fas fa-phone me-2"></i>
-                                <span>Điện thoại: (0292) 3731072 - Fax: (0292) 3731071</span>
-                            </a>
-                        </p>
-                        <p class="footer-contact-item">
-                            <a href="mailto:cusc@ctu.edu.vn">
-                                <i class="fas fa-envelope me-2"></i>
-                                <span>cusc@ctu.edu.vn</span>
-                            </a>
-                        </p>
+ <footer class="footer pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Cột 1: Logo + tên + địa chỉ -->
+            <div class="col-xl-6 col-md-12" style="text-align: left;">
+                <div class="footer-info">
+                    <a href="index.html">
+                        <img src="assets/img/logo_CUSC.jpg" alt="CUSC Logo" 
+                             class="mb-4"
+                             style="height: 110px; width: auto;">
+                    </a>
+                    <p class="mb-3" style="color: goldenrod; text-align: left;">
+                        <span class="fw-bold" style="font-size: 20px;">
+                            TRUNG TÂM CÔNG NGHỆ PHẦN MỀM - ĐẠI HỌC CẦN THƠ
+                        </span>
+                    </p>
+                    <p class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span style="font-size: 18px;">01 Lý Tự Trọng, Phường Ninh Kiều, Thành phố Cần Thơ</span>
+                    </p>
+                    <p class="footer-contact-item">
+                        <a href="tel:02923731072">
+                            <i class="fas fa-phone me-2"></i>
+                            <span style="font-size: 18px;">Điện thoại: (0292) 3731072 - Fax: (0292) 3731071</span>
+                        </a>
+                    </p>
+                    <p class="footer-contact-item">
+                        <a href="mailto:cusc@ctu.edu.vn">
+                            <i class="fas fa-envelope me-2"></i>
+                            <span style="font-size: 18px;">cusc@ctu.edu.vn</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <!-- Cột 2: Kết nối mạng xã hội -->
+            <div class="col-xl-3 col-md-6">
+                <div class="footer-links">
+                    <h5 class="footer-title mb-4" style="font-size: 18px;">Kết nối với chúng tôi</h5>
+                    <div class="footer-social d-flex flex-row gap-3 mb-md-4">
+                        <a href="https://www.facebook.com/cuscsoftware" class="social-link">
+                            <img src="assets/img/facebook.webp" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCND2Duw4gdaKPaWSiXLGu_Q" class="social-link">
+                            <img src="assets/img/youtube.webp" alt="Youtube" class="social-icon">
+                        </a>
+                        <a href="https://zalo.me/4610637127320083887" class="social-link">
+                            <img src="assets/img/zalo.webp" alt="Zalo" class="social-icon">
+                        </a>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="footer-links">
-                        <h5 class="footer-title mb-4">Kết nối với chúng tôi</h5>
-                        <div class="footer-social d-flex flex-row gap-3 mb-md-4">
-                            <a href="https://www.facebook.com/cuscsoftware" class="social-link">
-                                <img src="assets/img/facebook.webp" alt="Facebook" class="social-icon">
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCND2Duw4gdaKPaWSiXLGu_Q" class="social-link">
-                                <img src="assets/img/youtube.webp" alt="Youtube" class="social-icon">
-                            </a>
-                            <a href="https://zalo.me/4610637127320083887" class="social-link">
-                                <img src="assets/img/zalo.webp" alt="Zalo" class="social-icon">
-                            </a>
+            </div>
+            <!-- Cột 3: Lượt truy cập -->
+            <div class="col-xl-3 col-md-6">
+                <div class="footer-counter">
+                    <h5 class="footer-title mb-4" style="font-size: 18px;">Lượt truy cập</h5>
+                    <div class="counter-stats">
+                        <div class="counter-item">
+                            <i class="fas fa-users"></i>
+                            <span style="font-size: 18px;">Đang online:</span>
+                            <span class="counter-number">252</span>
                         </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="footer-counter">
-                        <h5 class="footer-title mb-4">Lượt truy cập</h5>
-                        <div class="counter-stats">
-                            <div class="counter-item">
-                                <i class="fas fa-users"></i>
-                                <span>Đang online:</span>
-                                <span class="counter-number">252</span>
-                            </div>
-                            <div class="counter-item">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Hôm nay:</span>
-                                <span class="counter-number">515</span>
-                            </div>
-                            <div class="counter-item">
-                                <i class="fas fa-signal"></i>
-                                <span>Tổng truy cập trong tháng:</span>
-                                <span class="counter-number">10819</span>
-                            </div>
+                        <div class="counter-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span style="font-size: 18px;">Hôm nay:</span>
+                            <span class="counter-number">515</span>
+                        </div>
+                        <div class="counter-item">
+                            <i class="fas fa-signal"></i>
+                            <span style="font-size: 18px;">Tổng truy cập tháng:</span>
+                            <span class="counter-number">919</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-
+    </div>
+</footer>
     <!-- Footer -->
     <div class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="z-index: 10">
         <i class="fas fa-arrow-up"></i>
@@ -741,5 +670,4 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/script.js"></script>
 </body>
-
 </html>
